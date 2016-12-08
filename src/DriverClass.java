@@ -1,3 +1,6 @@
+import java.util.Set;
+import java.util.TreeSet;
+
 /**
  * Created by Finbar on 08/12/2016.
  */
@@ -22,6 +25,13 @@ public class DriverClass {
 
         AbstractRace race1 = raceFactory.createRace("The Grand National",30, "wet");
         AbstractRace race2 = raceFactory.createRace("The 4:15",25, "muddy",10);
+
+        Set<Horse> race1Horses = new TreeSet<>();
+        race1Horses.add(h1);
+        race1Horses.add(h2);
+//        race1Horses.add(h1);/
+
+        race1.setHorses(race1Horses);
 
         System.out.println(race1.toString());
         System.out.println(race2.toString());

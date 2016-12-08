@@ -11,7 +11,7 @@ public class AbstractRace {
     private double furlongs;
     private String groundCondition;
     private String raceType;
-    private Set<Horse> horses = new TreeSet<>();
+    private Set<Horse> horses;
 
     public String getName() {
         return name;
