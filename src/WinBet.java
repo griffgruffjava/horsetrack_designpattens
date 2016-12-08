@@ -1,7 +1,7 @@
 /**
  * Created by t00175569 on 08/12/2016.
  */
-public class WinBet extends BetStratagy {
+public class WinBet extends BetStrategy {
 
     private String raceName;
     private String horseName;
