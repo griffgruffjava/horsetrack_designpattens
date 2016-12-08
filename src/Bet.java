@@ -1,7 +1,8 @@
 /**
  * Created by t00175569 on 08/12/2016.
  */
-public interface Bet {
+public class Bet {
 
-    String getDescription();
+    private double amount;
+    private String horseName;
 }

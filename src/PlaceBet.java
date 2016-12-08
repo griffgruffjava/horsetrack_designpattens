@@ -1,18 +1,31 @@
 /**
  * Created by t00175569 on 08/12/2016.
  */
-public class PlaceBet extends BetStrategy {
+public class PlaceBet extends BetSlipDecorator {
 
-    private String raceName;
+    private AbstractBetSlip abstractBetSlip;
+    private double amount;
     private String horseName;
+    private String raceName;
 
-    public PlaceBet(String raceName, String horseName) {
-        this.raceName = raceName;
+    public PlaceBet(AbstractBetSlip abstractBetSlip, double amount, String horseName, String raceName) {
+        this.abstractBetSlip = abstractBetSlip;
+        this.amount = amount;
         this.horseName = horseName;
+        this.raceName = raceName;
     }
+
 
     @Override
-    public void betSlip(double bet) {
-        System.out.println(bet + " on " + horseName + " to come 1st, 2nd, or 3rd in the " + raceName);
+    public String getBetSummary() {
+        System.out.println("yo yo");
+        return abstractBetSlip.betSummary + "\n$"+ amount + " on " + horseName + " to PLACE in " + raceName;
     }
+
+    public double betTotal() {
+
+        return abstractBetSlip.betTotal() + amount;
+    }
+
+
 }

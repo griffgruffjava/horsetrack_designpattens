@@ -15,11 +15,11 @@ public class DriverClass {
         newStables.removeHorse(h1.getName());
         newStables.removeHorse(h1.getName());
 
-        System.out.println(newStables.toString());
+//        System.out.println(newStables.toString());
 
         Stables newerStables = Stables.getInstance();
 
-        System.out.println(newerStables.toString());
+//        System.out.println(newerStables.toString());
 
         RaceFactory raceFactory = new RaceFactory();
 
@@ -27,13 +27,25 @@ public class DriverClass {
         AbstractRace race2 = raceFactory.createRace("The 4:15",25, "muddy",10);
 
         Set<Horse> race1Horses = new TreeSet<>();
-        race1Horses.add(h1);
-        race1Horses.add(h2);
+//        race1Horses.add(h1);
+//        race1Horses.add(h2);
 //        race1Horses.add(h1);/
 
         race1.setHorses(race1Horses);
 
-        System.out.println(race1.toString());
-        System.out.println(race2.toString());
+//        System.out.println(race1.toString());
+//        System.out.println(race2.toString());
+
+        AbstractBetSlip betSlip = new BetSlip();
+        System.out.println(betSlip.betSummary);
+
+        betSlip = new PlaceBet(betSlip,30.0,"gluegun","the hunt");
+        System.out.println(betSlip.betSummary);
+        betSlip = new WinBet(betSlip, 25);
+        System.out.println(betSlip.betSummary);
+        betSlip = new WinBet(betSlip, 25);
+        System.out.println(betSlip.betSummary);
+
+
     }
 }
