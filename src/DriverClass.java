@@ -37,14 +37,14 @@ public class DriverClass {
 //        System.out.println(race2.toString());
 
         AbstractBetSlip betSlip = new BetSlip();
-        System.out.println(betSlip.betSummary);
+        System.out.println(betSlip.getBetSummary());
 
-        betSlip = new PlaceBet(betSlip,30.0,"gluegun","the hunt");
-        System.out.println(betSlip.betSummary);
-        betSlip = new WinBet(betSlip, 25);
-        System.out.println(betSlip.betSummary);
-        betSlip = new WinBet(betSlip, 25);
-        System.out.println(betSlip.betSummary);
+//        betSlip = new PlaceBet(betSlip,30.0,"gluegun","the hunt");
+//        System.out.println(betSlip.getBetSummary());
+        betSlip = new WinBet(betSlip, 25,"gluegun","the hunt");
+        System.out.println(betSlip.getBetSummary());
+        betSlip = new WinBet(betSlip, 25,"woodglue","the hunt");
+        System.out.println(betSlip.getBetSummary());
 
 
     }

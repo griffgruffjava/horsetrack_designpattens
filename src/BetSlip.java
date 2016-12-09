@@ -3,7 +3,7 @@
  */
 public class BetSlip extends AbstractBetSlip {
 
-    public BetSlip() {betSummary = "here i am";}
+    public BetSlip() {betSummary = "The bets made are";}
 
     public double betTotal() {
         return 0.0;
