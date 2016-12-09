@@ -4,7 +4,7 @@ import java.util.TreeSet;
 /**
  * Created by t00175569 on 09/12/2016.
  */
-public class FactoryDriver {
+public class DriverFactoryMethodPattern {
     public static void main(String[] args) {
 
         RaceFactory raceFactory = new RaceFactory();

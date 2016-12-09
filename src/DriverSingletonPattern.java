@@ -1,7 +1,7 @@
 /**
  * Created by t00175569 on 09/12/2016.
  */
-public class SingletonDriver {
+public class DriverSingletonPattern {
     public static void main(String[] args) {
         //Declare first instance of stables
         Stables stablesOne = Stables.getInstance();

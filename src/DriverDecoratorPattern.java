@@ -1,7 +1,7 @@
 /**
  * Created by t00175569 on 09/12/2016.
  */
-public class DecoratorDriver {
+public class DriverDecoratorPattern {
 
     public static void main(String[] args) {
         AbstractBetSlip myBetSlip = new BetSlip();
