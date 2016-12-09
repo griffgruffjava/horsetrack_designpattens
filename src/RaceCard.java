@@ -64,12 +64,12 @@ public class RaceCard implements RaceCardSubject, RaceObserver {
     }
 
     @Override
-    public void registerObserver(RaceCardObserver raceCardObserver) {
+    public void registerRaceCardObserver(RaceCardObserver raceCardObserver) {
         raceCardObservers.add(raceCardObserver);
     }
 
     @Override
-    public void removeObserver(RaceCardObserver raceCardObserver) {
+    public void removeRaceCardObserver(RaceCardObserver raceCardObserver) {
         int i = raceCardObservers.indexOf(raceCardObserver);
         if (i >= 0) {
             raceCardObservers.remove(i);
@@ -77,9 +77,9 @@ public class RaceCard implements RaceCardSubject, RaceObserver {
     }
 
     @Override
-    public void notifyObservers() {
+    public void notifyRaceCardObservers() {
         for (RaceCardObserver raceCardObserver : raceCardObservers) {
-            raceCardObserver.update(raceName, winner, second, third);
+            raceCardObserver.updateRaceCardObserver(raceName, winner, second, third);
         }
     }
 
@@ -89,11 +89,11 @@ public class RaceCard implements RaceCardSubject, RaceObserver {
         this.winner = winner;
         this.second = second;
         this.third = third;
-        notifyObservers();
+        notifyRaceCardObservers();
     }
 
     @Override
-    public void update(String raceName, String first, String second, String third) {
+    public void updateRaceObserver(String raceName, String first, String second, String third) {
         setResults(raceName,first,second,third);
     }
 

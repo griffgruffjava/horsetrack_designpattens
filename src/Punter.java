@@ -9,12 +9,12 @@ public class Punter implements RaceCardObserver {
     public Punter(RaceCard raceCard, BetSlip betSlip) {
         this.raceCard = raceCard;
         this.betSlip = betSlip;
-        raceCard.registerObserver(this);
+        raceCard.registerRaceCardObserver(this);
     }
 
 
     @Override
-    public void update(String raceName, String first, String second, String third) {
+    public void updateRaceCardObserver(String raceName, String first, String second, String third) {
         System.out.println("the results of the " + raceName + " were:"
                 + "\nWinner - " + first
                 + "\nSecond Place - " + second

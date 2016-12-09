@@ -66,12 +66,12 @@ public class AbstractRace implements RaceSubject {
     }
 
     @Override
-    public void registerObserver(RaceObserver raceObserver) {
+    public void registerRaceObserver(RaceObserver raceObserver) {
         raceObservers.add(raceObserver);
     }
 
     @Override
-    public void removeObserver(RaceObserver raceObserver) {
+    public void removeRaceObserver(RaceObserver raceObserver) {
         int i = raceObservers.indexOf(raceObserver);
         if (i >= 0) {
             raceObservers.remove(i);
@@ -79,9 +79,9 @@ public class AbstractRace implements RaceSubject {
     }
 
     @Override
-    public void notifyObservers() {
+    public void notifyRaceObservers() {
         for (RaceObserver raceObserver : raceObservers) {
-            raceObserver.update(name, winner, second, third);
+            raceObserver.updateRaceObserver(name, winner, second, third);
         }
     }
 
@@ -90,7 +90,7 @@ public class AbstractRace implements RaceSubject {
         this.second = second;
         this.third = third;
         this.isFinished = true;
-        notifyObservers();
+        notifyRaceObservers();
     }
 
 

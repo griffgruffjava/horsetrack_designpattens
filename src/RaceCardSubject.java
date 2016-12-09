@@ -3,7 +3,8 @@
  */
 public interface RaceCardSubject {
 
-    void registerObserver(RaceCardObserver raceObserver);
-    void removeObserver(RaceCardObserver raceObserver);
-    void notifyObservers();
+    void registerRaceCardObserver(RaceCardObserver raceObserver);
+    void removeRaceCardObserver(RaceCardObserver raceObserver);
+    void notifyRaceCardObservers();
 }
+

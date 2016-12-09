@@ -7,7 +7,7 @@ import java.util.TreeSet;
 /**
  * Created by t00175569 on 09/12/2016.
  */
-public class DriverObserverPattern {
+public class DriverObserverPatternInception {
     public static void main(String[] args) {
 
         RaceFactory raceFactory = new RaceFactory();
@@ -16,6 +16,7 @@ public class DriverObserverPattern {
 
         AbstractRace race1 = raceFactory.createRace("The 5.15", 30, "dry");
         race1.setHorses(someHorses);
+        race1 = RunRace.runIt(race1);
         AbstractRace race2 = raceFactory.createRace("The 5.25", 30, "dry");
         race2.setHorses(someHorses);
         AbstractRace race3 = raceFactory.createRace("The 5.35", 30, "dry",10);
@@ -25,6 +26,10 @@ public class DriverObserverPattern {
         races.add(race1);
         races.add(race2);
         races.add(race3);
+
+//        race1 = RunRace.runIt(race1);
+//        race2 = RunRace.runIt(race2);
+//        race3 = RunRace.runIt(race3);
 
         RaceCard raceCard = new RaceCard.RaceCardBuilder().date(LocalDate.now()).races(races).build();
 //        System.out.println(raceCard.toString());
@@ -36,6 +41,7 @@ public class DriverObserverPattern {
         BetSlip slip = new BetSlip();
 
         Punter punter = new Punter(raceCard,slip);
+        Punter punt2 = new Punter(raceCard,slip);
 
         race1 = RunRace.runIt(race1);
         race2 = RunRace.runIt(race2);

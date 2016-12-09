@@ -3,5 +3,5 @@
  */
 public interface RaceCardObserver {
 
-    void update(String raceName, String first, String second, String third);
+    void updateRaceCardObserver(String raceName, String first, String second, String third);
 }
