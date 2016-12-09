@@ -4,31 +4,33 @@
 public class WinBet extends BetSlipDecorator {
 
 
-
-    AbstractBetSlip abstractBetSlip;
-    private double amount;
-    private String horseName;
-    private String raceName;
+//    AbstractBetSlip abstractBetSlip;
+//    private double amount;
+//    private String horseName;
+//    private String raceName;
+//
+//    public WinBet(AbstractBetSlip abstractBetSlip, double amount, String horseName, String raceName) {
+//        this.abstractBetSlip = abstractBetSlip;
+//        this.amount = amount;
+//        this.horseName = horseName;
+//        this.raceName = raceName;
+//    }
 
     public WinBet(AbstractBetSlip abstractBetSlip, double amount, String horseName, String raceName) {
-        this.abstractBetSlip = abstractBetSlip;
-        this.amount = amount;
-        this.horseName = horseName;
-        this.raceName = raceName;
+        super(abstractBetSlip, amount, horseName, raceName);
     }
 
-
+    //
+//
     @Override
     public String getBetSummary() {
-        System.out.println("yo yo");
-        return abstractBetSlip.getBetSummary() + "\n$"+ amount + " on " + horseName + " to WIN in " + raceName;
-
+        return super.getAbstractBetSlip().getBetSummary() + "\n$" + super.getAmount() + " on " + super.getHorseName() + " to WIN in " + super.getRaceName();
     }
-
-    public double betTotal() {
-
-        return abstractBetSlip.betTotal() + amount;
-    }
+//
+//    public double betTotal() {
+//
+//        return abstractBetSlip.betTotal() + amount;
+//    }
 
 
 //    private String raceName;

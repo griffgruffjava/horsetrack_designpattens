@@ -3,29 +3,19 @@
  */
 public class PlaceBet extends BetSlipDecorator {
 
-    private AbstractBetSlip abstractBetSlip;
-    private double amount;
-    private String horseName;
-    private String raceName;
+
 
     public PlaceBet(AbstractBetSlip abstractBetSlip, double amount, String horseName, String raceName) {
-        this.abstractBetSlip = abstractBetSlip;
-        this.amount = amount;
-        this.horseName = horseName;
-        this.raceName = raceName;
+        super(abstractBetSlip, amount, horseName, raceName);
     }
 
 
     @Override
     public String getBetSummary() {
-        System.out.println("yo yo");
-        return abstractBetSlip.betSummary + "\n$"+ amount + " on " + horseName + " to PLACE in " + raceName;
+        return super.getAbstractBetSlip().getBetSummary() + "\n$"+ super.getAmount() + " on " + super.getHorseName() + " to PLACE in " + super.getRaceName();
     }
 
-    public double betTotal() {
 
-        return abstractBetSlip.betTotal() + amount;
-    }
 
 
 }
