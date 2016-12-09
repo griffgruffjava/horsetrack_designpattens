@@ -1,6 +1,5 @@
-/**
- * Created by C_Train on 09/12/2016.
- */
+
+
 public class DriverTemplatePattern {
     public static void main(String[] args) {
         PrepSteepleRace steepleRace = new PrepSteepleRace(true,false);
@@ -8,7 +7,9 @@ public class DriverTemplatePattern {
         PrepFlatRace flatRace2 = new PrepFlatRace(true,true);
 
         steepleRace.prepReciepe();
+        System.out.println();
         flatRace.prepReciepe();
+        System.out.println();
         flatRace2.prepReciepe();
     }
 }

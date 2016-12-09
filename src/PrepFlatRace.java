@@ -1,6 +1,5 @@
-/**
- * Created by C_Train on 09/12/2016.
- */
+
+
 public class PrepFlatRace extends PrepGrounds {
 
     boolean isRain;

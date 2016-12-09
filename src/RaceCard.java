@@ -2,9 +2,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by t00175569 on 09/12/2016.
- */
+
 public class RaceCard implements RaceCardSubject, RaceObserver {
 
     private final LocalDate date;
