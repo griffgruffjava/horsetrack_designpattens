@@ -26,6 +26,7 @@ public abstract class BetSlipDecorator extends AbstractBetSlip {
         return abstractBetSlip;
     }
 
+
     public double getAmount() {
         return amount;
     }

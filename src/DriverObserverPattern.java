@@ -8,7 +8,7 @@ public class DriverObserverPattern {
 
         AbstractRace theRace = raceFactory.createRace("The 5.15", 30, "dry");
 
-        Punter punter = new Punter(theRace);
+//        Punter punter = new Punter(theRace);
 
         theRace.setResults("1","2","3");
 

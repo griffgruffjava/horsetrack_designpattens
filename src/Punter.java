@@ -4,9 +4,11 @@
 public class Punter implements Observer {
 
     private AbstractRace race;
+    private AbstractBetSlip betSlip;
 
-    public Punter(AbstractRace race){
+    public Punter(AbstractRace race, BetSlip betSlip){
         this.race = race;
+//        this.betSlip = betSlip
         race.registerObserver(this);
     }
 
