@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abe9f937-e5d8-439f-83a4-727c6ee6be65" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DriverSimpleObserverPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JumboTronDisplay.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DriverObserverPattern.java" afterPath="$PROJECT_DIR$/src/DriverObserverPatternInception.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DriverTemplatePattern.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PrepFlatRace.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PrepGrounds.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PrepSteepleRace.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/betting_system/RaceHorse.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/betting_system/AbstractRace.class" afterPath="$PROJECT_DIR$/out/production/betting_system/AbstractRace.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AbstractRace.java" afterPath="$PROJECT_DIR$/src/AbstractRace.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Punter.java" afterPath="$PROJECT_DIR$/src/Punter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RaceCard.java" afterPath="$PROJECT_DIR$/src/RaceCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RaceCardObserver.java" afterPath="$PROJECT_DIR$/src/RaceCardObserver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RaceCardSubject.java" afterPath="$PROJECT_DIR$/src/RaceCardSubject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RaceObserver.java" afterPath="$PROJECT_DIR$/src/RaceObserver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RaceSubject.java" afterPath="$PROJECT_DIR$/src/RaceSubject.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -46,11 +41,9 @@
           <file leaf-file-name="DriverFactoryMethodPattern.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/DriverFactoryMethodPattern.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="311">
+                <state relative-caret-position="270">
                   <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="25" selection-end-column="28" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -58,11 +51,9 @@
           <file leaf-file-name="UtilityClass.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/UtilityClass.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
+                <state relative-caret-position="330">
                   <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -70,7 +61,7 @@
           <file leaf-file-name="FlatRace.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/FlatRace.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
+                <state relative-caret-position="255">
                   <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -82,22 +73,30 @@
           <file leaf-file-name="DriverDecoratorPattern.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/DriverDecoratorPattern.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
+                <state relative-caret-position="150">
                   <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AbstractRace.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PrepGrounds.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/PrepGrounds.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="465">
+                  <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AbstractRace.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/AbstractRace.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1190">
+                <state relative-caret-position="1022">
                   <caret line="111" column="23" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1448#1449#0" expanded="true" />
-                    <element signature="e#1495#1496#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -106,7 +105,7 @@
           <file leaf-file-name="RaceSubject.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/RaceSubject.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
+                <state relative-caret-position="135">
                   <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
                   <folding />
                 </state>
@@ -116,7 +115,7 @@
           <file leaf-file-name="RaceCardSubject.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/RaceCardSubject.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
+                <state relative-caret-position="150">
                   <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding />
                 </state>
@@ -126,18 +125,8 @@
           <file leaf-file-name="RaceCardObserver.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/RaceCardObserver.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
+                <state relative-caret-position="75">
                   <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BetSlip.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/BetSlip.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -146,7 +135,7 @@
           <file leaf-file-name="BetSlipDecorator.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/BetSlipDecorator.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
+                <state relative-caret-position="375">
                   <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
                   <folding>
                     <element signature="e#703#704#0" expanded="true" />
@@ -159,25 +148,13 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="RaceObserver.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/RaceObserver.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
+                <state relative-caret-position="75">
                   <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FlatRace.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/FlatRace.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -185,7 +162,7 @@
           <file leaf-file-name="Punter.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Punter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
+                <state relative-caret-position="180">
                   <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
                   <folding />
                 </state>
@@ -195,7 +172,7 @@
           <file leaf-file-name="RaceCard.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/RaceCard.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="191">
+                <state relative-caret-position="870">
                   <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -215,104 +192,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="JAVA/AbstractBetSlip" pinned="false" current-in-tab="false">
-            <entry file="uml://JAVA/AbstractBetSlip">
-              <provider selected="true" editor-type-id="UmlEditorProvider">
-                <state>
-                  <ID>JAVA</ID>
-                  <OriginalElement>AbstractBetSlip</OriginalElement>
-                  <nodes>
-                    <node x="346.0" y="1453.0">WinBet</node>
-                    <node x="307.75" y="776.0">SteepleRace</node>
-                    <node x="68.75" y="821.0">FlatRace</node>
-                    <node x="0.0" y="1453.0">PlaceBet</node>
-                    <node x="370.25" y="962.0">AbstractBetSlip</node>
-                    <node x="561.25" y="1229.5">BetSlip</node>
-                    <node x="0.0" y="145.0">AbstractRace</node>
-                    <node x="752.75" y="1063.0">Punter</node>
-                    <node x="972.0" y="22.0">RaceObserver</node>
-                    <node x="642.0" y="0.0">RaceCardSubject</node>
-                    <node x="127.24999999999994" y="1130.0">BetSlipDecorator</node>
-                    <node x="686.25" y="145.0">RaceCard</node>
-                    <node x="726.25" y="962.0">RaceCardObserver</node>
-                    <node x="156.0" y="0.0">RaceSubject</node>
-                  </nodes>
-                  <notes />
-                  <edges>
-                    <edge source="FlatRace" target="AbstractRace">
-                      <point x="0.0" y="-25.5" />
-                      <point x="178.25" y="751.0" />
-                      <point x="149.25" y="751.0" />
-                      <point x="-149.25" y="290.5" />
-                    </edge>
-                    <edge source="RaceCard" target="RaceObserver">
-                      <point x="127.75" y="-235.5" />
-                      <point x="1069.5" y="120.0" />
-                      <point x="1086.5" y="120.0" />
-                      <point x="0.0" y="25.5" />
-                    </edge>
-                    <edge source="BetSlip" target="AbstractBetSlip">
-                      <point x="0.0" y="-37.0" />
-                      <point x="621.25" y="1105.0" />
-                      <point x="531.5" y="1105.0" />
-                      <point x="53.75" y="59.0" />
-                    </edge>
-                    <edge source="Punter" target="RaceCardObserver">
-                      <point x="0.0" y="-59.5" />
-                      <point x="0.0" y="25.5" />
-                    </edge>
-                    <edge source="BetSlipDecorator" target="AbstractBetSlip">
-                      <point x="1.1368683772161603E-13" y="-136.5" />
-                      <point x="334.25000000000006" y="1105.0" />
-                      <point x="424.0" y="1105.0" />
-                      <point x="-53.75" y="59.0" />
-                    </edge>
-                    <edge source="RaceCard" target="RaceCardSubject">
-                      <point x="-127.75" y="-235.5" />
-                      <point x="814.0" y="120.0" />
-                      <point x="797.0" y="120.0" />
-                      <point x="0.0" y="47.5" />
-                    </edge>
-                    <edge source="WinBet" target="BetSlipDecorator">
-                      <point x="0.0" y="-37.0" />
-                      <point x="505.5" y="1428.0" />
-                      <point x="437.75000000000006" y="1428.0" />
-                      <point x="103.50000000000011" y="136.5" />
-                    </edge>
-                    <edge source="AbstractRace" target="RaceSubject">
-                      <point x="0.0" y="-290.5" />
-                      <point x="0.0" y="47.5" />
-                    </edge>
-                    <edge source="PlaceBet" target="BetSlipDecorator">
-                      <point x="0.0" y="-37.0" />
-                      <point x="163.0" y="1428.0" />
-                      <point x="230.74999999999994" y="1428.0" />
-                      <point x="-103.5" y="136.5" />
-                    </edge>
-                    <edge source="SteepleRace" target="AbstractRace">
-                      <point x="0.0" y="-70.5" />
-                      <point x="418.75" y="751.0" />
-                      <point x="447.75" y="751.0" />
-                      <point x="149.25" y="290.5" />
-                    </edge>
-                  </edges>
-                  <settings layout="Hierarchic Group" zoom="1.0" x="127.0" y="380.0" />
-                  <SelectedNodes />
-                  <Categories>
-                    <Category>Methods</Category>
-                    <Category>Constructors</Category>
-                    <Category>Fields</Category>
-                  </Categories>
-                  <SCOPE>All</SCOPE>
-                  <VISIBILITY>private</VISIBILITY>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="DriverBuilderPattern.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/DriverBuilderPattern.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
+                <state relative-caret-position="135">
                   <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="10" selection-end-column="48" />
                   <folding />
                 </state>
@@ -322,7 +205,7 @@
           <file leaf-file-name="DriverObserverPatternInception.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/DriverObserverPatternInception.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="680">
+                <state relative-caret-position="735">
                   <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -334,31 +217,52 @@
           <file leaf-file-name="JumboTronDisplay.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/JumboTronDisplay.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
+                <state relative-caret-position="465">
                   <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DriverSimpleObserverPattern.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="DriverSimpleObserverPattern.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/DriverSimpleObserverPattern.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="RunRace.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/RunRace.java">
+          <file leaf-file-name="PrepFlatRace.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/PrepFlatRace.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="19" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PrepSteepleRace.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/PrepSteepleRace.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                   <folding>
-                    <element signature="imports" expanded="true" />
+                    <element signature="e#301#302#0" expanded="true" />
+                    <element signature="e#372#373#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DriverTemplatePattern.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/DriverTemplatePattern.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -427,6 +331,10 @@
         <option value="$PROJECT_DIR$/src/DriverObserverPatternInception.java" />
         <option value="$PROJECT_DIR$/src/DriverSimpleObserverPattern.java" />
         <option value="$PROJECT_DIR$/src/JumboTronDisplay.java" />
+        <option value="$PROJECT_DIR$/src/PrepGrounds.java" />
+        <option value="$PROJECT_DIR$/src/PrepFlatRace.java" />
+        <option value="$PROJECT_DIR$/src/PrepSteepleRace.java" />
+        <option value="$PROJECT_DIR$/src/DriverTemplatePattern.java" />
       </list>
     </option>
   </component>
@@ -437,10 +345,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1173" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -467,6 +374,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -501,9 +409,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -514,26 +421,12 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HF_DP" />
   </component>
-  <component name="RunManager" selected="Application.DriverSimpleObserverPattern">
+  <component name="RunManager" selected="Application.DriverTemplatePattern">
     <configuration default="false" name="DriverSingletonPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="DriverSingletonPattern" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="betting_system" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="DriverFactoryMethodPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="DriverFactoryMethodPattern" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -579,6 +472,21 @@
     <configuration default="false" name="DriverSimpleObserverPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="DriverSimpleObserverPattern" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="betting_system" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DriverTemplatePattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="DriverTemplatePattern" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1008,18 +916,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.DriverSingletonPattern" />
-      <item index="1" class="java.lang.String" itemvalue="Application.DriverFactoryMethodPattern" />
-      <item index="2" class="java.lang.String" itemvalue="Application.DriverObserverPatternInception" />
-      <item index="3" class="java.lang.String" itemvalue="Application.DriverBuilderPattern" />
-      <item index="4" class="java.lang.String" itemvalue="Application.DriverSimpleObserverPattern" />
+      <item index="1" class="java.lang.String" itemvalue="Application.DriverObserverPatternInception" />
+      <item index="2" class="java.lang.String" itemvalue="Application.DriverBuilderPattern" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DriverSimpleObserverPattern" />
+      <item index="4" class="java.lang.String" itemvalue="Application.DriverTemplatePattern" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.DriverSimpleObserverPattern" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DriverObserverPatternInception" />
-        <item index="2" class="java.lang.String" itemvalue="Application.DriverBuilderPattern" />
-        <item index="3" class="java.lang.String" itemvalue="Application.DriverSingletonPattern" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DriverFactoryMethodPattern" />
+        <item index="0" class="java.lang.String" itemvalue="Application.DriverTemplatePattern" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DriverSimpleObserverPattern" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DriverObserverPatternInception" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DriverBuilderPattern" />
+        <item index="4" class="java.lang.String" itemvalue="Application.DriverSingletonPattern" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -1067,14 +975,15 @@
       <workItem from="1481232410300" duration="7220000" />
       <workItem from="1481276271785" duration="4830000" />
       <workItem from="1481282783782" duration="19663000" />
+      <workItem from="1481307103266" duration="3008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47234000" />
+    <option name="totallyTimeSpent" value="50242000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1084,12 +993,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32471263" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32377428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32662836" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13432837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1341853" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27693474" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1141,49 +1050,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/FlatRace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SteepleRace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
-          <folding>
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Horse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Race.java" />
     <entry file="file://$PROJECT_DIR$/src/Stables.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#1192#1193#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1203,8 +1077,6 @@
           <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1235,10 +1107,10 @@
         <state relative-caret-position="153">
           <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding>
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="false" />
+            <element signature="e#232#233#0" expanded="false" />
+            <element signature="e#355#356#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1250,10 +1122,10 @@
         <state relative-caret-position="153">
           <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding>
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="false" />
+            <element signature="e#232#233#0" expanded="false" />
+            <element signature="e#355#356#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1265,9 +1137,9 @@
         <state relative-caret-position="795">
           <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#1192#1193#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1322,10 +1194,10 @@
         <state relative-caret-position="289">
           <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
           <folding>
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="false" />
+            <element signature="e#232#233#0" expanded="false" />
+            <element signature="e#355#356#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1363,7 +1235,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BetSlip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="45">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
         </state>
@@ -1371,7 +1243,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BetSlipDecorator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="375">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#703#704#0" expanded="true" />
@@ -1406,8 +1278,8 @@
             <node x="0.0" y="145.0">AbstractRace</node>
             <node x="752.75" y="1063.0">Punter</node>
             <node x="972.0" y="22.0">RaceObserver</node>
-            <node x="642.0" y="0.0">RaceCardSubject</node>
             <node x="127.24999999999994" y="1130.0">BetSlipDecorator</node>
+            <node x="642.0" y="0.0">RaceCardSubject</node>
             <node x="686.25" y="145.0">RaceCard</node>
             <node x="726.25" y="962.0">RaceCardObserver</node>
             <node x="156.0" y="0.0">RaceSubject</node>
@@ -1448,15 +1320,15 @@
               <point x="797.0" y="120.0" />
               <point x="0.0" y="47.5" />
             </edge>
+            <edge source="AbstractRace" target="RaceSubject">
+              <point x="0.0" y="-290.5" />
+              <point x="0.0" y="47.5" />
+            </edge>
             <edge source="WinBet" target="BetSlipDecorator">
               <point x="0.0" y="-37.0" />
               <point x="505.5" y="1428.0" />
               <point x="437.75000000000006" y="1428.0" />
               <point x="103.50000000000011" y="136.5" />
-            </edge>
-            <edge source="AbstractRace" target="RaceSubject">
-              <point x="0.0" y="-290.5" />
-              <point x="0.0" y="47.5" />
             </edge>
             <edge source="PlaceBet" target="BetSlipDecorator">
               <point x="0.0" y="-37.0" />
@@ -1472,11 +1344,13 @@
             </edge>
           </edges>
           <settings layout="Hierarchic Group" zoom="1.0" x="127.0" y="380.0" />
-          <SelectedNodes />
+          <SelectedNodes>
+            <node>AbstractBetSlip</node>
+          </SelectedNodes>
           <Categories>
-            <Category>Methods</Category>
-            <Category>Constructors</Category>
             <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1485,7 +1359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DriverDecoratorPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="150">
           <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
           <folding />
         </state>
@@ -1493,18 +1367,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DriverFactoryMethodPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="270">
           <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FlatRace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="255">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1513,17 +1385,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UtilityClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="330">
           <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RunRace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="135">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1533,7 +1403,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RaceObserver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="75">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
           <folding />
         </state>
@@ -1541,7 +1411,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RaceCardObserver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="75">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
           <folding />
         </state>
@@ -1549,7 +1419,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RaceCardSubject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="150">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
@@ -1557,7 +1427,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RaceSubject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="135">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
@@ -1565,19 +1435,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AbstractRace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
+        <state relative-caret-position="1022">
           <caret line="111" column="23" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DriverBuilderPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="135">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="10" selection-end-column="48" />
           <folding />
         </state>
@@ -1585,7 +1453,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RaceCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
+        <state relative-caret-position="870">
           <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1606,7 +1474,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Punter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="180">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
@@ -1614,7 +1482,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DriverObserverPatternInception.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
+        <state relative-caret-position="735">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1624,7 +1492,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JumboTronDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="465">
           <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding />
         </state>
@@ -1632,8 +1500,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DriverSimpleObserverPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrepGrounds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrepFlatRace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrepSteepleRace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DriverTemplatePattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding />
         </state>
       </provider>
