@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * Created by Finbar on 08/12/2016.
  */
-public class FlatRace extends AbstractRace /*implements Subject*/ {
+public class FlatRace extends AbstractRace {
 
 
 
@@ -13,7 +13,6 @@ public class FlatRace extends AbstractRace /*implements Subject*/ {
         setFurlongs(furlongs);
         setGroundCondition(groundCondition);
         setRaceType("Flat Race");
-//        observers = new ArrayList<>();
     }
 
 

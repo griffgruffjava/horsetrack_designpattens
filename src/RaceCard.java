@@ -1,15 +1,22 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by t00175569 on 09/12/2016.
  */
-public class RaceCard {
+public class RaceCard implements RaceCardSubject, RaceObserver {
 
     private final LocalDate date;
     private final String venue;
     private final List<AbstractRace> races;
     private final Stables stables;
+
+    private List<RaceCardObserver> raceCardObservers;
+    private String raceName;
+    private String winner;
+    private String second;
+    private String third;
 
 
     private RaceCard(RaceCardBuilder raceCardBuilder) {
@@ -17,6 +24,7 @@ public class RaceCard {
         this.venue = raceCardBuilder.venue;
         this.races = raceCardBuilder.races;
         this.stables = raceCardBuilder.stables;
+        raceCardObservers = new ArrayList<>();
     }
 
     public LocalDate getDate() {
@@ -53,6 +61,40 @@ public class RaceCard {
             result += "\n" + stables.toString();
         }
         return result;
+    }
+
+    @Override
+    public void registerObserver(RaceCardObserver raceCardObserver) {
+        raceCardObservers.add(raceCardObserver);
+    }
+
+    @Override
+    public void removeObserver(RaceCardObserver raceCardObserver) {
+        int i = raceCardObservers.indexOf(raceCardObserver);
+        if (i >= 0) {
+            raceCardObservers.remove(i);
+        }
+    }
+
+    @Override
+    public void notifyObservers() {
+        for (RaceCardObserver raceCardObserver : raceCardObservers) {
+            raceCardObserver.update(raceName, winner, second, third);
+        }
+    }
+
+    public void setResults(String raceName, String winner, String second, String third) {
+        System.out.println("Stop --- HERE I AM");
+        this.raceName = raceName;
+        this.winner = winner;
+        this.second = second;
+        this.third = third;
+        notifyObservers();
+    }
+
+    @Override
+    public void update(String raceName, String first, String second, String third) {
+        setResults(raceName,first,second,third);
     }
 
     public static class RaceCardBuilder {

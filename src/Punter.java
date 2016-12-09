@@ -1,24 +1,23 @@
 /**
  * Created by t00175569 on 09/12/2016.
  */
-public class Punter implements Observer {
+public class Punter implements RaceCardObserver {
 
-    private AbstractRace race;
+    private RaceCard raceCard;
     private AbstractBetSlip betSlip;
 
-    public Punter(AbstractRace race, BetSlip betSlip){
-        this.race = race;
-//        this.betSlip = betSlip
-        race.registerObserver(this);
+    public Punter(RaceCard raceCard, BetSlip betSlip) {
+        this.raceCard = raceCard;
+        this.betSlip = betSlip;
+        raceCard.registerObserver(this);
     }
 
 
-
     @Override
-    public void update(String first, String second, String third) {
-        System.out.println("the results of the " + race.getName() +" were:"
-                +"\nWinner - " + first
-                +"\nSecond Place - " +second
-                +"\nThird Place - " + third);
+    public void update(String raceName, String first, String second, String third) {
+        System.out.println("the results of the " + raceName + " were:"
+                + "\nWinner - " + first
+                + "\nSecond Place - " + second
+                + "\nThird Place - " + third);
     }
 }

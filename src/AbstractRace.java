@@ -1,12 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import java.util.TreeSet;
 
 /**
  * Created by Finbar on 08/12/2016.
  */
-public class AbstractRace implements Subject{
+public class AbstractRace implements RaceSubject {
 
     private String name;
     private double furlongs;
@@ -14,13 +13,16 @@ public class AbstractRace implements Subject{
     private String raceType;
     private Set<Horse> horses;
 
-    private List<Observer> observers;
+    private boolean isFinished;
+
+    private List<RaceObserver> raceObservers;
     private String winner;
     private String second;
     private String third;
 
     public AbstractRace(){
-        observers = new ArrayList<>();
+        raceObservers = new ArrayList<>();
+        isFinished = false;
     }
 
     public String getName() {
@@ -64,22 +66,22 @@ public class AbstractRace implements Subject{
     }
 
     @Override
-    public void registerObserver(Observer observer) {
-        observers.add(observer);
+    public void registerObserver(RaceObserver raceObserver) {
+        raceObservers.add(raceObserver);
     }
 
     @Override
-    public void removeObserver(Observer observer) {
-        int i = observers.indexOf(observer);
+    public void removeObserver(RaceObserver raceObserver) {
+        int i = raceObservers.indexOf(raceObserver);
         if (i >= 0) {
-            observers.remove(i);
+            raceObservers.remove(i);
         }
     }
 
     @Override
     public void notifyObservers() {
-        for (Observer observer : observers) {
-            observer.update(winner, second, third);
+        for (RaceObserver raceObserver : raceObservers) {
+            raceObserver.update(name, winner, second, third);
         }
     }
 
@@ -87,21 +89,30 @@ public class AbstractRace implements Subject{
         this.winner = winner;
         this.second = second;
         this.third = third;
+        this.isFinished = true;
         notifyObservers();
     }
+
 
     public String toString() {
         String card = "\nThis is the " + getName() + " " + getRaceType()
                 + "\nlength = " + getFurlongs() + " furlongs"
                 + "\nground condition = " + getGroundCondition();
 
-        if(null!=horses) {
-            card +=  "\nHorses running:";
-            for (Horse h : horses) {
-                card += "\n-" + h.getName();
+        if(!isFinished) {
+            if (null != horses) {
+                card += "\nHorses running:";
+                for (Horse h : horses) {
+                    card += "\n-" + h.getName();
+                }
+            } else {
+                card += "\nNo Horses registered for this race yet";
             }
         }else {
-            card += "\nNo Horses registered for this race yet";
+            card += "\nThe results are: "
+                    +"\nWinner " + winner
+                    +"\nSecond " + second
+                    +"\nThird " + third;
         }
 
 
