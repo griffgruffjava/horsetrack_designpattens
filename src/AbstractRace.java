@@ -58,6 +58,16 @@ public class AbstractRace {
                 + "\nlength = " + getFurlongs() + " furlongs"
                 + "\nground condition = " + getGroundCondition();
 
+        if(null!=horses) {
+            card +=  "\nHorses running:";
+            for (Horse h : horses) {
+                card += "\n-" + h.getName();
+            }
+        }else {
+            card += "\nNo Horses registered for this race yet";
+        }
+
+
         return card;
     }
 }

@@ -17,9 +17,9 @@ public abstract class BetSlipDecorator extends AbstractBetSlip {
 
     public abstract String getBetSummary();
 
-    public double betTotal() {
+    public double getBetTotal() {
 
-        return abstractBetSlip.betTotal() + amount;
+        return abstractBetSlip.getBetTotal() + amount;
     }
 
     public AbstractBetSlip getAbstractBetSlip() {

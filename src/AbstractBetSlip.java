@@ -10,7 +10,11 @@ public abstract class AbstractBetSlip {
         return betSummary;
     }
 
-    public abstract double betTotal();
+    public String getStringTotal() {
+        return "The total is " + getBetTotal();
+    }
+
+    public abstract double getBetTotal();
 
 
 

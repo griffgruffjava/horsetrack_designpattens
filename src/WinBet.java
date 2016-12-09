@@ -27,9 +27,9 @@ public class WinBet extends BetSlipDecorator {
         return super.getAbstractBetSlip().getBetSummary() + "\n$" + super.getAmount() + " on " + super.getHorseName() + " to WIN in " + super.getRaceName();
     }
 //
-//    public double betTotal() {
+//    public double getBetTotal() {
 //
-//        return abstractBetSlip.betTotal() + amount;
+//        return abstractBetSlip.getBetTotal() + amount;
 //    }
 
 

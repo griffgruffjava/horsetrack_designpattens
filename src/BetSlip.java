@@ -5,9 +5,14 @@ public class BetSlip extends AbstractBetSlip {
 
     public BetSlip() {betSummary = "The bets made are";}
 
-    public double betTotal() {
+//    public String getStringTotal(){
+//        return "The total is " + getBetTotal();
+//    }
+
+    public double getBetTotal() {
         return 0.0;
     }
+
 
 
 }
