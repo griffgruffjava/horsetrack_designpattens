@@ -1,6 +1,4 @@
-/**
- * Created by Finbar on 08/12/2016.
- */
+
 public class SteepleRace extends AbstractRace {
 
     private int numOfJumps;

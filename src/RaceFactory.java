@@ -1,7 +1,7 @@
-/**
- * Created by Finbar on 08/12/2016.
- */
+
+
 public class RaceFactory {
+
 
     public AbstractRace createRace(String name, double furlongs, String ground) {
         return new FlatRace(name,furlongs,ground);

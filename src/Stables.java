@@ -1,9 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Finbar on 08/12/2016.
- */
+
+
 public class Stables {
 
     private List<Horse> stableHorses = new ArrayList<>();
@@ -14,7 +13,6 @@ public class Stables {
     public static Stables getInstance() {
         if (theStables == null) {
             theStables = new Stables();
-//            stableHorses = new ArrayList<>();
         }
 
         return theStables;

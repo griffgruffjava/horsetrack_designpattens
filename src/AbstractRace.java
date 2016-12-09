@@ -2,10 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created by Finbar on 08/12/2016.
- */
-public class AbstractRace implements RaceSubject {
+
+public abstract class AbstractRace implements RaceSubject {
 
     private String name;
     private double furlongs;
