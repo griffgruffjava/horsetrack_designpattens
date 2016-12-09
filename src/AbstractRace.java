@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -5,13 +6,22 @@ import java.util.TreeSet;
 /**
  * Created by Finbar on 08/12/2016.
  */
-public class AbstractRace {
+public class AbstractRace implements Subject{
 
     private String name;
     private double furlongs;
     private String groundCondition;
     private String raceType;
     private Set<Horse> horses;
+
+    private List<Observer> observers;
+    private String winner;
+    private String second;
+    private String third;
+
+    public AbstractRace(){
+        observers = new ArrayList<>();
+    }
 
     public String getName() {
         return name;
@@ -51,6 +61,33 @@ public class AbstractRace {
 
     public void setHorses(Set<Horse> horses) {
         this.horses = horses;
+    }
+
+    @Override
+    public void registerObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    @Override
+    public void removeObserver(Observer observer) {
+        int i = observers.indexOf(observer);
+        if (i >= 0) {
+            observers.remove(i);
+        }
+    }
+
+    @Override
+    public void notifyObservers() {
+        for (Observer observer : observers) {
+            observer.update(winner, second, third);
+        }
+    }
+
+    public void setResults(String winner, String second, String third) {
+        this.winner = winner;
+        this.second = second;
+        this.third = third;
+        notifyObservers();
     }
 
     public String toString() {
